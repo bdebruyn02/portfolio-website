@@ -1,0 +1,67 @@
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    @include flex-column-center;
+
+    .img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        font-style: italic;
+        background-repeat: no-repeat;
+        background-size: cover;
+        shape-margin: 0.75rem;
+
+       img {
+        border-radius: .5rem;
+       }
+    }
+    
+    .info {
+        @include flex-column-center;
+
+        font-size: 16px;
+        height: auto;
+
+        * {
+            margin: .25rem 0;
+        }
+        color: #2B2D42;
+        .name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .jobTitle {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+        
+        .location {
+            font-size: 1.25rem;
+            font-weight: 500;
+            display: inherit;
+            align-items: center;
+            mat-icon {
+                margin-right: .25rem;
+                color: #2B2D42;
+            }
+        }
+    
+    }
+    
+    
+    .links {
+        ion-icon {
+            cursor: pointer;
+            font-size: 2.188rem;
+        }
+    }
+}
+

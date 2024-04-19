@@ -1,0 +1,16 @@
+
+<div class="container">
+  <div class="img">
+    <img alt="Profile Picture" src="/assets/profile-image.png" width="125" height="125"/>
+  </div>
+  <div class="info">
+    <div class="name">{{name}}</div>
+    <div class="jobTitle">{{jobTitle}}</div>
+    <div class="location"><mat-icon aria-label="location icon" fontIcon="public" />{{location}}</div>
+  </div>
+  <div class="links">
+    @for (item of links; track item.href) {
+      <ion-icon [name]="item.icon" [matTooltip]="item.name" (click)="window.open(item.href, '_blank')" />
+    } 
+  </div>
+</div>
