@@ -14,5 +14,8 @@ import { SkillsAndProjectsComponent } from './components/skills-and-projects/ski
 export class AppComponent {
   title = 'portfolio';
 
-  links: Array<LinksT> = [{icon: 'logo-github', href: 'https://github.com/LordTiger', name: 'Github'}]
+  links: Array<LinksT> = [
+    { name: 'Github', href: 'https://github.com/LordTiger',icon: 'logo-github' },
+    { name: 'Resume', href: 'https://drive.google.com/file/d/1ivT9rXfcjPebL6HAlUwQv1k0iCfkuaff/view', icon:'cloud-download-outline'}
+  ]
 }

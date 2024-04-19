@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import { IonIcon } from "@ionic/angular/standalone";
 import { addIcons } from 'ionicons';
-import { logoGithub } from 'ionicons/icons';
+import { logoGithub, cloudDownloadOutline } from 'ionicons/icons';
 import {MatTooltipModule} from '@angular/material/tooltip';
 
 export type LinksT = {
@@ -29,7 +29,7 @@ export class ProfileComponent  implements OnInit {
     
 
     constructor() {
-      addIcons({logoGithub});
+      addIcons({logoGithub, cloudDownloadOutline});
     }
 
   ngOnInit() {
