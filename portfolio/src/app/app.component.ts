@@ -15,7 +15,10 @@ export class AppComponent {
   title = 'portfolio';
 
   links: Array<LinksT> = [
-    { name: 'Github', href: 'https://github.com/LordTiger',icon: 'logo-github' },
-    { name: 'Resume', href: 'https://drive.google.com/file/d/1ivT9rXfcjPebL6HAlUwQv1k0iCfkuaff/view', icon:'cloud-download-outline'}
+    { name: 'View Github', href: 'https://github.com/LordTiger',icon: 'logo-github' },
+    { name: 'Download Resume', href: 'https://drive.google.com/file/d/1ivT9rXfcjPebL6HAlUwQv1k0iCfkuaff/view', icon:'cloud-download-outline'}
   ]
+
+  about_me: string = `Hi, I'm Brandon, a full-stack developer with a strong passion for coding. My primary tech stack includes ASP.NET and ASP.NET Web API, .NET Framework, C#, TypeScript, JavaScript, Angular, 
+  SCSS, CSS, Ionic, Firebase, and Microsoft SQL. I strive for excellence in all my projects and am dedicated to staying updated with the latest advancements in technology.`
 }

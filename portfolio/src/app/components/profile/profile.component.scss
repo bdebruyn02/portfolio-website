@@ -5,7 +5,8 @@
     align-items: center;
 }
 
-.container {
+
+.profile-container {
     width: 100%;
     @include flex-column-center;
 
@@ -66,3 +67,27 @@
     }
 }
 
+mat-divider {
+    margin: 1rem 0;
+}
+
+.about-container {
+    width: 90%;
+    font-size: 16px;
+    color: #2B2D42;
+
+    * {
+        margin: .5rem 0; 
+    }
+
+    .header {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .content {
+        font-size: 1.063rem;
+        font-weight: 500;
+        text-align: justify;
+    }
+}

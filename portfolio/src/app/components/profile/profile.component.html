@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="profile-container">
   <div class="img">
     <img alt="Profile Picture" src="/assets/profile-image.png" width="125" height="125"/>
   </div>
@@ -13,4 +13,11 @@
       <ion-icon [name]="item.icon" [matTooltip]="item.name" (click)="window.open(item.href, '_blank')" />
     } 
   </div>
+</div>
+<mat-divider></mat-divider>
+<div class="about-container">
+  <div class="header">
+    About me:
+  </div>
+  <div class="content">{{about_me}}</div>
 </div>
