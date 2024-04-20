@@ -67,6 +67,11 @@
     }
 }
 
+.header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 mat-divider {
     margin: 1rem 0;
 }
@@ -75,19 +80,31 @@ mat-divider {
     width: 90%;
     font-size: 16px;
     color: #2B2D42;
+    margin: 1rem .5rem;
 
     * {
         margin: .5rem 0; 
-    }
-
-    .header {
-        font-size: 1.5rem;
-        font-weight: bold;
     }
 
     .content {
         font-size: 1.063rem;
         font-weight: 500;
         text-align: justify;
+    }
+}
+
+.skills-container {
+    font-size: 16px;
+    color: #2B2D42;
+    margin: 1rem .5rem;
+
+    * {
+        margin: .35rem 0; 
+    }
+
+    .skills {
+        ion-chip {
+            margin-right: .5rem;
+        }
     }
 }

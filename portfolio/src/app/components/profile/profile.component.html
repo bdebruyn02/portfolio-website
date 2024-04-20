@@ -21,3 +21,12 @@
   </div>
   <div class="content">{{about_me}}</div>
 </div>
+
+<div class="skills-container">
+  <div class="header">Skills:</div>
+  <div class="skills">
+    @for (item of skills; track item) {
+      <ion-chip color="secondary">{{item}}</ion-chip>
+    } 
+  </div>
+</div>
