@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
 import { LinksT, ProfileComponent } from './components/profile/profile.component';
 import { EducationAndWorkHistoryComponent } from './components/education-and-work-history/education-and-work-history.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ProfileComponent, EducationAndWorkHistoryComponent],
+  imports: [ProfileComponent, EducationAndWorkHistoryComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'portfolio';
-
   links: Array<LinksT> = [
     { name: 'View Github Profile', href: 'https://github.com/LordTiger', icon: 'logo-github' },
     { name: 'Download Resume', href: 'https://drive.google.com/file/d/1ivT9rXfcjPebL6HAlUwQv1k0iCfkuaff/view', icon:'cloud-download-outline'},
