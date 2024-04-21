@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonCardSubtitle, IonButton } from '@ionic/angular/standalone';
+import { IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonCardSubtitle } from '@ionic/angular/standalone';
 
 
 export type ProjectT = {
@@ -14,7 +14,7 @@ export type ProjectT = {
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   standalone: true,
-  imports: [IonButton, CommonModule, IonCardSubtitle, IonCardTitle, IonCardContent, IonCardHeader, IonCard ]
+  imports: [ CommonModule, IonCardSubtitle, IonCardTitle, IonCardContent, IonCardHeader, IonCard ]
 })
 export class ProjectsComponent  implements OnInit {
   @Input({required: true}) projects!: Array<ProjectT>;

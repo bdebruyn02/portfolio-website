@@ -3,3 +3,8 @@
   <projects [projects]="projects" />
   <education-and-work-history /> 
 </div>
+
+<div #loadingScreen class="splash-screen">
+  <animation src="assets/opening_animation.json" (onAnimationComplete)="loadingScreen.remove()" [loop]="false"
+    [height]="'150px'" [width]="'150px'" />
+</div>

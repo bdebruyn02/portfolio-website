@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { LinksT, ProfileComponent } from './components/profile/profile.component';
 import { EducationAndWorkHistoryComponent } from './components/education-and-work-history/education-and-work-history.component';
 import { ProjectsComponent, ProjectT } from './components/projects/projects.component';
-
+import { AnimationComponent } from './components/animation/animation.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ProfileComponent, EducationAndWorkHistoryComponent, ProjectsComponent],
+  imports: [ProfileComponent, EducationAndWorkHistoryComponent, ProjectsComponent, AnimationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -56,4 +56,5 @@ export class AppComponent {
       href: 'https://github.com/LordTiger/esports-scoring-app'
     }
   ];
+  
 }
