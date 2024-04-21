@@ -6,15 +6,14 @@
       @for (item of projects; track item.name) {
         <div class="card">
           <ion-card>
-            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+            <img [alt]="item.name" [src]="'assets/' + item.photoName"  width="320" height="180"/>
             <ion-card-header>
-              <ion-card-title>Card Title</ion-card-title>
-              <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+              <ion-card-title>{{item.name}}</ion-card-title>
+              <ion-card-subtitle>{{item.shortDesc}}</ion-card-subtitle>
             </ion-card-header>
-          
-            <ion-card-content>
-              Here's a small text description for the card content. Nothing more, nothing less.
-            </ion-card-content>
+            @if(item.href) {
+              <ion-button fill="clear" [href]="item.href" target="_blank">Link to Project</ion-button>
+            }
           </ion-card>
         </div>
       }

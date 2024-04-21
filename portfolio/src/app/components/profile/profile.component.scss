@@ -11,17 +11,9 @@
     @include flex-column-center;
 
     .img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-        font-style: italic;
-        background-repeat: no-repeat;
-        background-size: cover;
-        shape-margin: 0.75rem;
-
-       img {
-        border-radius: .5rem;
-       }
+        img {
+            border-radius: .5rem;
+           }
     }
     
     .info {

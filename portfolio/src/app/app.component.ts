@@ -23,32 +23,37 @@ export class AppComponent {
     {
       name: 'FiveM Launcher',
       photoName: 'TDLauncher.png',
-      shortDesc: '',
-      link: ''
+      shortDesc: `Angular and Electron combine to create a desktop app for FiveM. Seamlessly connect to multiple servers without in-game hassle.
+       Enhance player convenience and efficiency with swift server access outside the game environment.`,
+      href: 'https://github.com/LordTiger/td-fivem-launcher'
     },
     {
-      name: 'Online Chatting App made with React and FireBase',
+      name: 'Online Chatting App',
       photoName: 'vic_chat.jpg',
-      shortDesc: '',
-      link: ''
+      shortDesc: `React and Firebase unite to enable real-time chatting. Google and Facebook login streamline connections.
+       Engage effortlessly in a dynamic virtual environment, fostering seamless interaction with others.`,
+      href: 'https://github.com/LordTiger/react-chatapp'
     },
     {
-      name: 'Bundle of FiveM Scripts coded in LUA',
+      name: 'Bundle of FiveM Scripts',
       photoName: 'fivem_lua_scripts.jpg',
-      shortDesc: '',
-      link: ''
+      shortDesc: `Lua-script compilation tailored to diverse FiveM needs.
+       Versatile solutions enhance gameplay and server management for various gaming scenarios, offering comprehensive support within the FiveM ecosystem.`,
+      href: 'https://github.com/LordTiger/FiveM-Scripts'
     },
     {
       name: 'FiveM Server',
       photoName: 'originx.png',
-      shortDesc: '',
-      link: ''
+      shortDesc: `Lua-driven server with MySQL integration, renowned in South Africa's FiveM RP community.
+       Hosted up to 75 players continuously, delivering immersive multiplayer experiences and establishing a prominent presence in regional gaming.`,
+      href: 'https://www.youtube.com/@originxrp5202'
     },
     {
-      name: 'E-Sports Scoring Application',
-      photoName: '',
-      shortDesc: '',
-      link: ''
+      name: 'E-Sports Scoring',
+      photoName: 'scorecraft.png',
+      shortDesc: `Angular 17 and .NET 8 Web API converge to empower e-sports management. 
+      Team managers benefit from streamlined player/team management, match scheduling, and comprehensive score tracking across diverse formats, elevating competitive gaming standards.`,
+      href: 'https://github.com/LordTiger/esports-scoring-app'
     }
   ];
 }
