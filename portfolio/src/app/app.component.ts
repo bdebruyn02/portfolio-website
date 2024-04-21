@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LinksT, ProfileComponent } from './components/profile/profile.component';
 import { EducationAndWorkHistoryComponent } from './components/education-and-work-history/education-and-work-history.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectsComponent, ProjectT } from './components/projects/projects.component';
 
 @Component({
   selector: 'app-root',
@@ -16,9 +16,39 @@ export class AppComponent {
     { name: 'Download Resume', href: 'https://drive.google.com/file/d/1ivT9rXfcjPebL6HAlUwQv1k0iCfkuaff/view', icon:'cloud-download-outline'},
     { name: 'View Linkedin Profile', href: 'https://www.linkedin.com/in/bdebruyn/', icon: 'logo-linkedin'}
   ]
-
   about_me: string = `Hi, I'm Brandon, a full-stack developer with a strong passion for coding. My primary tech stack includes ASP.NET and ASP.NET Web API, .NET Framework, C#, TypeScript, JavaScript, Angular, 
   SCSS, CSS, Ionic, Firebase, and Microsoft SQL. I strive for excellence in all my projects and am dedicated to staying updated with the latest advancements in technology.`;
-
   skills: Array<string> = ['Microsoft SQL', 'ASP.NET Web API', 'Angular', 'Firebase', 'JavaScript', 'TypeScript', "C#", 'Ionic', ".NET Core", "ASP.NET MVC", "Git"];
+  projects: Array<ProjectT> = [
+    {
+      name: 'FiveM Launcher',
+      photoName: 'TDLauncher.png',
+      shortDesc: '',
+      link: ''
+    },
+    {
+      name: 'Online Chatting App made with React and FireBase',
+      photoName: 'vic_chat.jpg',
+      shortDesc: '',
+      link: ''
+    },
+    {
+      name: 'Bundle of FiveM Scripts coded in LUA',
+      photoName: 'fivem_lua_scripts.jpg',
+      shortDesc: '',
+      link: ''
+    },
+    {
+      name: 'FiveM Server',
+      photoName: 'originx.png',
+      shortDesc: '',
+      link: ''
+    },
+    {
+      name: 'E-Sports Scoring Application',
+      photoName: '',
+      shortDesc: '',
+      link: ''
+    }
+  ];
 }

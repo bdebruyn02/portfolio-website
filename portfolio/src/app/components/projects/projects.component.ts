@@ -1,12 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input, OnInit } from '@angular/core';
+import { IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonCardSubtitle } from '@ionic/angular/standalone';
 
+
+export type ProjectT = {
+  name: string;
+  shortDesc: string;
+  link?: string;
+  photoName: string;
+}
 @Component({
-  selector: 'app-projects',
+  selector: 'projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   standalone: true,
+  imports: [CommonModule, IonCardSubtitle, IonCardTitle, IonCardContent, IonCardHeader, IonCard ]
 })
 export class ProjectsComponent  implements OnInit {
+  @Input({required: true}) projects!: Array<ProjectT>;
 
   constructor() { }
 

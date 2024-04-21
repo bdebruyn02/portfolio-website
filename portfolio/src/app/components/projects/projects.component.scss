@@ -1,0 +1,18 @@
+.cards-container {
+    width: 100%;
+    height: auto;
+
+    color: #2B2D42;
+    margin: 1rem .5rem;
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .card {
+            width: 18.75rem;
+        }
+        
+    }
+}
