@@ -14,9 +14,18 @@
             width: 20rem;
             margin-bottom: 1rem;
             ion-card {
-                height: 100%;
+                height: 95%;
             }
         }
         
     }
+}
+
+.hasHref {
+    cursor: pointer;
+    transition: transform 300ms ease-out;
+}
+
+.hasHref:hover {
+    transform: translateY(-5px);
 }
