@@ -96,7 +96,14 @@ mat-divider {
 
     .skills {
         ion-chip {
+            cursor: default;
             margin-right: .5rem;
         }
+        
+        .ion-color:hover {
+            background: rgba(235,243,248,255);
+        }
+
+        
     }
 }

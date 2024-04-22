@@ -6,7 +6,7 @@
       @for (item of projects; track item.name) {
         <div [ngClass]="(item.href)? 'card hasHref': 'card'">
           <ion-card (click)="window.open(item.href, '_blank')">
-            <img [alt]="item.name" [src]="'assets/' + item.photoName" width="320" height="180" loading="lazy"/>
+            <img [alt]="item.name" [src]="'assets/' + item.photoName" width="300" height="168" loading="lazy"/>
             <ion-card-header>
               <ion-card-title>{{item.name}}</ion-card-title>
             </ion-card-header>

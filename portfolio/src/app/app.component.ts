@@ -19,6 +19,8 @@ export class AppComponent {
   about_me: string = `Hi, I'm Brandon, a full-stack developer with a strong passion for coding. My primary tech stack includes ASP.NET and ASP.NET Web API, .NET Framework, C#, TypeScript, JavaScript, Angular, 
   SCSS, CSS, Ionic, Firebase, and Microsoft SQL. I strive for excellence in all my projects and am dedicated to staying updated with the latest advancements in technology.`;
   skills: Array<string> = ['Microsoft SQL', 'ASP.NET Web API', 'Angular', 'Firebase', 'JavaScript', 'TypeScript', "C#", 'Ionic', ".NET Core", "ASP.NET MVC", "Git"];
+
+  // Give the shortDesc's more human feel, let the reader know what the challenges were and how librating it was to overcome. And that you don't fear a challenge.
   projects: Array<ProjectT> = [
     {
       name: 'FiveM Launcher',
