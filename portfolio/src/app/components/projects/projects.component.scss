@@ -3,21 +3,13 @@
     height: auto;
 
     color: #2B2D42;
-    margin: 1rem .5rem;
+    padding: 0 .5rem;
 
     .cards {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         height: 100%;
-        .card {
-            width: 18.75rem;
-            margin-left: -0.625rem;
-            // margin-bottom: 1rem;
-            ion-card {
-                height: 95%;
-            }
-        }
         
     }
 }
