@@ -6,25 +6,33 @@
 }
 
 
+@mixin flex-row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+ion-card {
+    border-radius: 10px;
+    box-shadow: none;
+}
+
 .profile-container {
     width: 100%;
-    @include flex-column-center;
-
-    .img {
-        img {
-            border-radius: .5rem;
-           }
-    }
+    padding: 0 .5rem;
+    @include flex-row-space-between;
     
     .info {
         @include flex-column-center;
+        align-items: flex-start;
 
         font-size: 16px;
         height: auto;
 
-        * {
-            margin: .125rem 0; // 4px top and bottom separation
-        }
+        // * {
+        //     margin: .125rem 0; // 4px top and bottom separation
+        // }
         
         color: #2B2D42;
         .name {
@@ -33,32 +41,52 @@
         }
         
         .jobTitle {
-            font-size: 1.125rem;
+            color: rgba(42, 44, 65, 0.8);
+            font-size: 1rem;
             font-weight: 500;
         }
-        
-        .location {
-            font-size: 1.125rem;
-            font-weight: 500;
-            display: inherit;
-            align-items: center;
-            mat-icon {
-                margin-right: .25rem;
-                color: #2B2D42;
+    
+    }
+
+    .other {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 1rem;
+        font-weight: 500;
+        height: 120px;
+
+        .links {
+            @include flex-column-center;
+            align-items: flex-end;
+    
+    
+            a {
+                color: rgba(42, 44, 65, 0.8) !important; 
+                text-decoration: none;
+            }
+    
+            a:hover {
+                color: rgba(42, 44, 65, 0.9) !important; 
+                text-decoration: underline;
             }
         }
-    
-    }
-    
-    
-    .links {
-        ion-icon {
-            cursor: pointer;
-            font-size: 1.875rem;
-            margin-right: .5rem;
-            color: #2B2D42;
+
+        .time-zone {
+            display: inline-flex;
+            flex-direction: row;
+
+            color: rgba(42, 44, 65, 0.8) !important; 
+
+            .location {
+                padding-right: 1rem;
+            }
         }
     }
+    
+    
+   
 }
 
 
