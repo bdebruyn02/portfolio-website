@@ -16,6 +16,11 @@
         display: inherit;
         justify-content: center;
         width: 60%;
+
+        .highchart {
+            padding: 0 1rem;
+            width: 100%;
+        }
     }
     
     .se {
@@ -47,6 +52,20 @@
         .se {
             width: 100%; /* Full width */
         }
+
+        .se > * {
+            width: 100%; /* Adjust width as needed */
+            margin-bottom: 20px; /* Adjust margin as needed */
+        }
+
+
+        .chart {
+            width: 100%;
+            .highchart {
+                width: 100%;
+            }
+        }
+    
     
         /* Adjust other styles as needed */
     }

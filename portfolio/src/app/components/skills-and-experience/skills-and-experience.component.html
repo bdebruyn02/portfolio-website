@@ -7,7 +7,9 @@
       <div class="subHeader" [innerHTML]="description"></div>
 
       <div class="content">
-        <div class="chart">1</div>
+        <div class="chart">
+          <div class="highchart" [chart]="chart"></div>
+        </div>
         <div class="se">
           @for (item of skills_exp; track item.category) {
             <mat-card appearance="outlined">
