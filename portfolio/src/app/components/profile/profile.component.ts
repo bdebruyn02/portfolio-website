@@ -23,7 +23,7 @@ export class ProfileComponent implements OnInit {
   @Input({ required: true }) location!: string;
   @Input({ required: true }) links!: Array<LinksT>;
   @Input({ required: true }) about_me!: string;
-  @Input({ required: true }) skills!: Array<string>;
+  // @Input({ required: true }) skills!: Array<string>;
 
   window = window;
   time?: string;

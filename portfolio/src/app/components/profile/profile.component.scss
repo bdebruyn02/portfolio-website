@@ -34,11 +34,6 @@
             font-weight: bold;
         }
         
-        .jobTitle {
-            color: rgba(42, 44, 65, 0.8);
-            font-size: 1rem;
-            font-weight: 500;
-        }
     
     }
 
@@ -100,32 +95,9 @@ mat-divider {
     }
 
     .content {
-        color: #7f8c8d;
+        color: rgba(42, 44, 65, 0.8);
         font-size: 1rem;
         font-weight: 500;
         text-align: justify;
-    }
-}
-
-.skills-container {
-    font-size: 16px;
-    color: #2B2D42;
-    margin: 1rem .5rem;
-
-    * {
-        margin: .25rem 0; 
-    }
-
-    .skills {
-        ion-chip {
-            cursor: default;
-            margin-right: .5rem;
-        }
-        
-        .ion-color:hover {
-            background: rgba(235,243,248,255);
-        }
-
-        
     }
 }

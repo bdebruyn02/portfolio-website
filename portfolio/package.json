@@ -21,6 +21,8 @@
     "@angular/platform-browser-dynamic": "^17.3.0",
     "@angular/router": "^17.3.0",
     "@ionic/angular": "^8.0.0",
+    "angular-highcharts": "^17.0.1",
+    "highcharts": "^11.4.1",
     "lottie-web": "^5.12.2",
     "ngx-lottie": "^11.0.2",
     "rxjs": "~7.8.0",

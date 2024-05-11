@@ -1,0 +1,29 @@
+<ion-card class="custom-card">
+  <ion-card-content>
+    <div class="se-container">
+      <div class="header">
+        Skills & Experience: 
+      </div>
+      <div class="subHeader" [innerHTML]="description"></div>
+
+      <div class="content">
+        <div class="chart">1</div>
+        <div class="se">
+          @for (item of skills_exp; track item.category) {
+            <mat-card appearance="outlined">
+              <mat-card-content>
+                <div class="header-text" [innerHTML]="item.category"></div>
+                <ul style="margin: .25rem 0 !important;">
+                  @for (tech of item.technologies; track tech) {
+                    <li>{{tech}}</li>
+                  }
+              </ul>
+              </mat-card-content>
+            </mat-card>
+          }
+        </div>
+      </div>
+    </div>
+
+  </ion-card-content>
+</ion-card>

@@ -80,8 +80,15 @@
  @include mat.all-component-themes($my-theme);
 
  .header {
+     color: #2B2D42;
      font-size: 1.25rem;
      font-weight: bold;
+ }
+
+ .subHeader {
+     color: rgba(42, 44, 65, 0.8);
+     font-size: 1rem;
+     font-weight: 500;
  }
 
  .img {

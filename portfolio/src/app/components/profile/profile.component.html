@@ -2,13 +2,12 @@
   <ion-card-content>
     <div class="profile-container">
       <div class="info">
-        <div class="name">{{name}}</div>
-        <div class="jobTitle">{{jobTitle}}</div>
+        <div class="header">{{name}}</div>
+        <div class="subHeader">{{jobTitle}}</div>
       </div>
       <div class="other">
         <div class="links">
           @for (item of links; track item.href) {
-           
             <a [href]="item.href" target="_blank" [innerHTML]="item.name | titlecase"></a>
           } 
         </div>
@@ -25,15 +24,6 @@
         About me:
       </div>
       <div class="content">{{about_me}}</div>
-    </div>
-    
-    <div class="skills-container">
-      <div class="header">Skills:</div>
-      <div class="skills">
-        @for (item of skills; track item) {
-          <ion-chip color="secondary">{{item}}</ion-chip>
-        } 
-      </div>
     </div>
   </ion-card-content>
 </ion-card>
