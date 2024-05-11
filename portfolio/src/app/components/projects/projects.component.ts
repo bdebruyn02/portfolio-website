@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
-import { IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonCardSubtitle } from '@ionic/angular/standalone';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, Input, OnInit, ViewChild } from '@angular/core';
+import { IonCard, IonCardContent } from '@ionic/angular/standalone';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import { SwiperContainer } from 'swiper/element';
 
 export type ProjectT = {
   name: string;
@@ -15,40 +16,22 @@ export type ProjectT = {
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   standalone: true,
-  imports: [ CommonModule, IonCardSubtitle, IonCardTitle, IonCardContent, IonCardHeader, IonCard, CarouselModule ]
+  imports: [ CommonModule, IonCardContent, IonCard, MatCardModule, MatIconModule ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectsComponent  implements OnInit {
   @Input({required: true}) projects!: Array<ProjectT>;
-  window = window;
+  windowWidth: number = 1920; // default width is 1920
+  private window = window;
 
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    // dots: true,
 
-    navSpeed: 700,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 4
-      }
-    },
-    nav: true
+  ngOnInit() {
+    this.windowWidth = this.window.innerWidth;
   }
 
-  constructor() { }
+  goToLink(href: string) {
+    this.window.open(href, '_blank')
+  }
 
-  ngOnInit() {}
-
+  
 }

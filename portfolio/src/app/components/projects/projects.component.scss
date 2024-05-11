@@ -10,15 +10,49 @@
         flex-direction: row;
         flex-wrap: wrap;
         height: 100%;
-        
+
+        mat-card {
+            width: 450px;
+            height: 400px !important;
+            margin: .5rem  0;
+            margin-bottom: 1rem;
+        }
+
+        mat-card img{
+            object-fit: cover; /*this makes the image in src fit to the size specified below*/
+            width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+            height: 239.16px !important;
+          }
     }
 }
 
-.hasHref {
-    cursor: pointer;
-    transition: transform 300ms ease-out;
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-text {
+        font-size: large;
+        font-weight: 500;
+        margin-top: .5rem;
+    }
+   
+    
+    .icon {
+        display: inherit;
+    
+        mat-icon:hover {
+            color: rgba(42, 44, 65, 0.5) !important; 
+            cursor: pointer;
+        }
+    }
 }
 
-.hasHref:hover {
-    transform: translateY(-5px);
+.card-content {
+    display: flex;
+    text-align: justify;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
 }
