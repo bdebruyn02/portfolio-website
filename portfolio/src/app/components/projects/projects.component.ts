@@ -3,7 +3,6 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, Input, OnInit, ViewChild } from '@an
 import { IonCard, IonCardContent } from '@ionic/angular/standalone';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
-import { SwiperContainer } from 'swiper/element';
 
 export type ProjectT = {
   name: string;

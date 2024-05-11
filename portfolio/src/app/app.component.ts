@@ -25,36 +25,40 @@ export class AppComponent {
     {
       name: 'FiveM Launcher',
       photoName: 'TDLauncher.png',
-      shortDesc: `Angular and Electron combine to create a desktop app for FiveM. Seamlessly connect to multiple servers without in-game hassle.
-       Enhance player convenience and efficiency with swift server access outside the game environment.`,
+      shortDesc: `Built with Angular and Electron, the launcher lets you connect to any "FiveM" server without opening the "FiveM" program separately.
+                  I noticed people paying for a similar tool unnecessarily and decided to create a free alternative.
+                  This project marked my first time combining Angular and Electron, with Electron enabling access to the native system shell for connecting to user-saved servers.`,
       href: 'https://github.com/LordTiger/td-fivem-launcher'
     },
     {
       name: 'Online Chatting App',
       photoName: 'vic_chat.jpg',
-      shortDesc: `React and Firebase unite to enable real-time chatting. Google and Facebook login streamline connections.
-       Engage effortlessly in a dynamic virtual environment, fostering seamless interaction with others.`,
+      shortDesc: `Built with React and Firebase, this project let's you login through Google or Facebook, with Firebase handling real-time chatting and the authentication.
+                  I do not have much to say about the project; as it was more of a learning experience to explore React and Firebase.`,
       href: 'https://github.com/LordTiger/react-chatapp'
     },
     {
       name: 'Bundle of FiveM Scripts',
       photoName: 'fivem_lua_scripts.jpg',
-      shortDesc: `Lua-script compilation tailored to diverse FiveM needs.
-       Versatile solutions enhance gameplay and server management for various gaming scenarios, offering comprehensive support within the FiveM ecosystem.`,
+      shortDesc: `Written in Lua, this project contains various scripts to meet the needs of a "FiveM" server. 
+                  The goal was to develop game modifications for these servers. There isn't much more to say about it, but it significantly helped my understanding of lua scripting,
+                  and improve on my coding skills.`,
       href: 'https://github.com/LordTiger/FiveM-Scripts'
     },
     {
       name: 'FiveM Server',
       photoName: 'originx.png',
-      shortDesc: `Lua-driven server with MySQL integration, renowned in South Africa's FiveM RP community.
-       Hosted up to 75 players continuously, delivering immersive multiplayer experiences and establishing a prominent presence in regional gaming.`,
+      shortDesc: `As the lead developer, I ran a successful FiveM Server in South Africa, drawing in a lively community of hundreds of players. 
+                  The project taught me invaluable lessons in hosting and configuration servers. Along the way,
+                  I sharpened my skills in MySQL and Lua scripting, troubleshooting server performance issues, and debugging game code.`,
       href: 'https://www.youtube.com/@originxrp5202'
     },
     {
       name: 'E-Sports Scoring',
       photoName: 'scorecraft.png',
-      shortDesc: `Angular 17 and .NET 8 Web API converge to empower e-sports management. 
-      Team managers benefit from streamlined player/team management, match scheduling, and comprehensive score tracking across diverse formats, elevating competitive gaming standards.`,
+      shortDesc: `Using Angular v17 and .NET 8 Web API with entity framework, I developed this project for managing e-sports teams, with additional functionality of match scheduling, score tracking and win rate ratio's for the team managers.
+                  The project goal was to learn standalone angular applications and how to integrate and use entity framework with .net web api.
+                  The project was fun, implementing entity framework into .net was something new to me, and i enjoyed learning it.`,
       href: 'https://github.com/LordTiger/esports-scoring-app'
     }
   ];
