@@ -12,7 +12,7 @@
         </div>
         <div class="se">
           @for (item of skills_exp; track item.category) {
-            <mat-card appearance="outlined">
+            <mat-card appearance="outlined" [ngStyle]="{'border-color': (item.category === selectedCategory.category)? selectedCategory.color: ''}">
               <mat-card-content>
                 <div class="header-text" [innerHTML]="item.category"></div>
                 <ul style="margin: .25rem 0 !important;">

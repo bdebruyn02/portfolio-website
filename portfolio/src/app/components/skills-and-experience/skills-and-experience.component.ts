@@ -10,6 +10,11 @@ export type Skill_ExpT = {
   technologies: Array<string>;
 }
 
+type highlightedCategory = {
+  category?: string;
+  color?: string;
+};
+
 @Component({
   selector: 'skills-and-experience',
   templateUrl: './skills-and-experience.component.html',
@@ -20,6 +25,8 @@ export type Skill_ExpT = {
 export class SkillsAndExperienceComponent  implements OnInit {
   @Input({required: true}) skills_exp!: Array<Skill_ExpT>;
   @Input({required: true}) description!: string;
+
+  selectedCategory: highlightedCategory = {};
 
   chartOptions: Options = {
     chart: {
@@ -64,6 +71,7 @@ export class SkillsAndExperienceComponent  implements OnInit {
     this.setPieChartData();
   }
 
+  
 
   private setPieChartData() {
     const chartOptions = {...this.chartOptions};
@@ -83,12 +91,20 @@ export class SkillsAndExperienceComponent  implements OnInit {
       {
         name: 'Percentage',
         colorByPoint: true,
-        data: data
-
+        data: data,
+        point:{
+          events:{
+              click: (event) => {
+                if(event.point.name !== this.selectedCategory.category)  this.selectedCategory = {category: event.point.name, color: String(event.point.color)};
+                else this.selectedCategory = {};
+              }
+          }
+        }            
       } as SeriesOptionsType
     ];
 
     this.chart = new Chart(chartOptions);
-  }
+  };
+
 
 }

@@ -27,7 +27,7 @@ export class AppComponent {
     },
     {
       category: 'Frontend Development',
-      technologies: ['Angular', 'Angular.js', 'JavaScript', 'TypeScript', 'Ionic', 'SCSS', 'HTML']
+      technologies: ['Angular', 'Angular.js', 'JavaScript', 'TypeScript', 'JQuery', 'Ionic', 'SCSS', 'HTML']
     },
     {
       category: 'Database and Deployment',
