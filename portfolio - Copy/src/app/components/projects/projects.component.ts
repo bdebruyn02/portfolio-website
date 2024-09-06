@@ -3,6 +3,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, Input, OnInit, ViewChild } from '@an
 import { IonCard, IonCardContent } from '@ionic/angular/standalone';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import { TuiCarousel } from '@taiga-ui/kit';
 
 export type ProjectT = {
   name: string;
@@ -15,14 +16,13 @@ export type ProjectT = {
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   standalone: true,
-  imports: [ CommonModule, IonCardContent, IonCard, MatCardModule, MatIconModule ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  imports: [ CommonModule, IonCardContent, IonCard, MatCardModule, MatIconModule, TuiCarousel ],
 })
 export class ProjectsComponent  implements OnInit {
   @Input({required: true}) projects!: Array<ProjectT>;
   windowWidth: number = 1920; // default width is 1920
   private window = window;
-
+  index = 0;
 
   ngOnInit() {
     this.windowWidth = this.window.innerWidth;

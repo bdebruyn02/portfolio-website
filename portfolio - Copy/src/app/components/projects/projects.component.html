@@ -5,7 +5,30 @@
         Projects: 
       </div>
       <div class="cards">
-        @if (windowWidth >= 1920) {
+
+        <tui-carousel [draggable]="true" [itemsCount]="3"  [(index)]="index">
+          @for (project of projects; track $index) {
+            <mat-card appearance="outlined" *tuiItem draggable="false">
+              <img mat-card-image class="img" [alt]="project.name" [src]="'assets/' + project.photoName" width="300" height="168" loading="lazy" >
+              <mat-card-content>
+                <div class="card-header">
+                 <div class="header-text" [innerHTML]="project.name"></div>
+                 @if (project.href) {
+                   <div class="icon">
+                     <mat-icon aria-hidden="false" aria-label="project link icon" fontIcon="link" (click)="goToLink(project.href)"></mat-icon>
+                   </div>
+                 }
+                </div>
+                <div class="card-content" [innerHTML]="project.shortDesc"></div>
+              </mat-card-content>
+            </mat-card>
+           }
+          <!-- <ng-container *ngFor="let item of items; let i = index">
+            <img *tuiItem alt="" draggable="false" src="assets/images/{{ item }}" class="item"
+              [class.item_active]="i === index + 1" />
+          </ng-container> -->
+        </tui-carousel>
+        <!-- @if (windowWidth >= 1920) {
           <swiper-container #swiperRef loop="true" slides-per-view="3.5" space-between="25" grab-cursor="true">
             @for (project of projects; track $index) {
              <swiper-slide [id]="$index">
@@ -92,7 +115,7 @@
              </swiper-slide>
             }
            </swiper-container>
-        }
+        } -->
 
         
       </div>
