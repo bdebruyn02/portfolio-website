@@ -4,6 +4,7 @@ html, body { height: 100%; }
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    --mat-app-background-color: #e6e6e6;
  }
 
 .header {
@@ -48,4 +49,5 @@ body {
 .custom-card {
     border-radius: 10px;
     box-shadow: none;
+    // background-color: #e6e6e6;
 }

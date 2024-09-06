@@ -6,11 +6,12 @@ import { HttpClient } from "@angular/common/http";
 import { portfolioData } from "./types/types";
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ProfileComponent } from "./components/profile/profile.component";
+import { SkillsAndExperienceComponent } from "./components/skills-and-experience/skills-and-experience.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TuiRoot, AnimationComponent, ProfileComponent],
+  imports: [RouterOutlet, TuiRoot, AnimationComponent, ProfileComponent,SkillsAndExperienceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
