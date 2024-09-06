@@ -15,7 +15,6 @@ import { ProfileComponent } from "./components/profile/profile.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-
   portfolioData?: portfolioData;
 
   private httpClient = inject(HttpClient);

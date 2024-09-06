@@ -7,8 +7,11 @@
     <!-- <education-and-work-history />  -->
   </div>
 
-  <div #loadingScreen class="splash-screen">
-    <animation src="/opening_animation.json" (onAnimationComplete)="loadingScreen.remove()" [loop]="false"
-      [height]="'150px'" [width]="'150px'" />
-  </div>
+  <ng-container ngProjectAs="tuiOverContent">
+    <div #loadingScreen class="splash-screen">
+      <animation src="/opening_animation.json" (onAnimationComplete)="loadingScreen.remove()" [loop]="false"
+        [height]="'150px'" [width]="'150px'" />
+    </div>
+  </ng-container>
+ 
 </tui-root>
