@@ -1,3 +1,4 @@
+import { TuiRoot } from "@taiga-ui/core";
 import { Component} from '@angular/core';
 import { LinksT, ProfileComponent } from './components/profile/profile.component';
 import { EducationAndWorkHistoryComponent } from './components/education-and-work-history/education-and-work-history.component';
@@ -7,7 +8,7 @@ import { Skill_ExpT, SkillsAndExperienceComponent } from './components/skills-an
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ProfileComponent, EducationAndWorkHistoryComponent, ProjectsComponent, AnimationComponent, SkillsAndExperienceComponent],
+  imports: [ProfileComponent, EducationAndWorkHistoryComponent, ProjectsComponent, AnimationComponent, SkillsAndExperienceComponent, TuiRoot],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

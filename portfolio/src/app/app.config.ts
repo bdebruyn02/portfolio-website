@@ -1,3 +1,5 @@
+import { NG_EVENT_PLUGINS } from "@taiga-ui/event-plugins";
+import { provideAnimations } from "@angular/platform-browser/animations";
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
@@ -7,9 +9,8 @@ import { provideIonicAngular } from '@ionic/angular/standalone';
 import { provideLottieOptions } from 'ngx-lottie';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideAnimationsAsync(), provideIonicAngular({}),
+  providers: [provideAnimations(), provideRouter(routes), provideAnimationsAsync(), provideIonicAngular({}),
     provideLottieOptions({
       player: () => import('lottie-web'),
-    })
-  ]
+    }), NG_EVENT_PLUGINS]
 };
