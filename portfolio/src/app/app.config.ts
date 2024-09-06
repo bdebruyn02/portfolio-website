@@ -7,6 +7,7 @@ import { routes } from './app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideLottieOptions } from 'ngx-lottie';
 import { provideHttpClient } from '@angular/common/http';
+import { provideIonicAngular } from '@ionic/angular/standalone';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -18,6 +19,6 @@ export const appConfig: ApplicationConfig = {
     provideLottieOptions({
       player: () => import('lottie-web'),
     }),
-    NG_EVENT_PLUGINS,
+    NG_EVENT_PLUGINS, provideIonicAngular({}),
   ],
 };

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider'
+import { IonCard, IonCardContent, IonChip } from '@ionic/angular/standalone';
 
 
 @Component({
