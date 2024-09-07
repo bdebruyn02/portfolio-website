@@ -1,4 +1,6 @@
 .cards-container {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px !important;
     width: 100%;
     height: auto;
 
@@ -10,7 +12,7 @@
 
         mat-card {
             width: 450px;
-            height: 480px !important;
+            height: 490px !important;
             margin: .5rem 0.5rem;
             margin-bottom: 1rem;
 
@@ -34,6 +36,7 @@
         font-size: large;
         font-weight: 500;
         margin-top: .5rem;
+        color: rgba(42, 44, 65, 0.8);
     }
 
 
@@ -54,4 +57,5 @@
     width: 100%;
     height: 100%;
     color: gray;
+    font-size: 15px;
 }

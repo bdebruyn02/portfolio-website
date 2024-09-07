@@ -15,8 +15,8 @@
                 <div class="card-header">
                  <div class="header-text" [innerHTML]="project.name"></div>
                  @if (project.href) {
-                   <div class="icon">
-                     <mat-icon aria-hidden="false" aria-label="project link icon" fontIcon="link" (click)="goToLink(project.href)"></mat-icon>
+                   <div class="icon" [title]="project.href">
+                     <mat-icon aria-hidden="false" aria-label="project.href" fontIcon="link" (click)="goToLink(project.href)"></mat-icon>
                    </div>
                  }
                 </div>

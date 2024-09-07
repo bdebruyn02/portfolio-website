@@ -6,7 +6,6 @@ import {MatIconModule} from '@angular/material/icon';
 import { projectT } from '../../types/types';
 import { CarouselModule, CarouselResponsiveOptions } from 'primeng/carousel';
 
-
 @Component({
   selector: 'featured-projects',
   templateUrl: './featured-projects.component.html',
