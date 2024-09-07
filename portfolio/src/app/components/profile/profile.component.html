@@ -10,6 +10,8 @@
                     @for (item of links(); track item.href) {
                         <a [href]="item.href" target="_blank" [innerHTML]="item.name | titlecase"></a>
                     }
+
+                    <a [innerHTML]="'Resume' | titlecase" (click)="downloadResume()"></a>
                 </div>
 
                 <div class="time-zone">

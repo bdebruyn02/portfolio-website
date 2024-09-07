@@ -32,10 +32,10 @@ export type portfolioData = {
 export type fileOptionsT = {
   filename: string;
   extension: string;
-  contentType: contentType
+  contentType: string
 }
 
-enum contentType {
+export enum contentType {
   TextPlain = 'text/plain',
   TextHtml = 'text/html',
   TextCss = 'text/css',
