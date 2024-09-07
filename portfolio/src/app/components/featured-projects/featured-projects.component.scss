@@ -6,14 +6,11 @@
     padding: 0 .5rem;
 
     .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         height: 100%;
 
         mat-card {
-            width: 425px;
-            height: 460px !important;
+            width: 450px;
+            height: 480px !important;
             margin: .5rem 0.5rem;
             margin-bottom: 1rem;
 
