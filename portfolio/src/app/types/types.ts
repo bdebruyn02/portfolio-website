@@ -20,14 +20,14 @@ export type projectT = {
   photoName: string;
   shortDesc: string;
   href: string;
+  feature: boolean;
 };
 
 export type portfolioData = {
   links?: linksT[];
   about_me?: string;
   experience?: experience[];
-  featuredProjects?: projectT[];
-  allProjects?: projectT[];
+  projects?: projectT[];
 };
 
 export type fileOptionsT = {

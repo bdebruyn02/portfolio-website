@@ -1,17 +1,27 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { ExperienceComponent } from '../../components/experience/experience.component';
-import { portfolioData } from '../../types/types';
+import { portfolioData, projectT } from '../../types/types';
+import { FeaturedProjectsComponent } from '../../components/featured-projects/featured-projects.component';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
   standalone: true,
-  imports: [ExperienceComponent]
+  imports: [ExperienceComponent, FeaturedProjectsComponent]
 })
-export class HomePageComponent  {
+export class HomePageComponent implements OnInit {
+  portfolioData?: portfolioData;
+  featuredProjects: projectT[] = [];
+
   private dataService = inject(DataService);
 
-  portfolioData: portfolioData = this.dataService.portfolioData();
+  ngOnInit(): void {
+    this.portfolioData = this.dataService.portfolioData();
+
+    this.featuredProjects = this.portfolioData.projects?.filter(x => x.feature) ?? [];
+  }
+
+
 }

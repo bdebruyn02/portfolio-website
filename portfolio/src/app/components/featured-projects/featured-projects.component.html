@@ -1,3 +1,29 @@
-<p>
-  featured-projects works!
-</p>
+<ion-card class="custom-card">
+  <ion-card-content>
+    <div class="cards-container">
+      <div class="header">
+        Featured Projects: 
+      </div>
+
+      <div class="cards">
+        @for (project of featuredProjects(); track $index) {
+          <mat-card appearance="outlined" >
+            <img mat-card-image class="img" [alt]="project.name" [src]="'/' + project.photoName" width="300" height="168" loading="lazy" >
+            <mat-card-content>
+              <div class="card-header">
+               <div class="header-text" [innerHTML]="project.name"></div>
+               @if (project.href) {
+                 <div class="icon">
+                   <mat-icon aria-hidden="false" aria-label="project link icon" fontIcon="link" (click)="goToLink(project.href)"></mat-icon>
+                 </div>
+               }
+              </div>
+              <div class="card-content" [innerHTML]="project.shortDesc"></div>
+            </mat-card-content>
+          </mat-card>
+        }
+      </div>
+    </div>
+
+  </ion-card-content>
+</ion-card>
