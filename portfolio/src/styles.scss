@@ -1,4 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #e6e6e6 !important;
+ }
+
+.header {
+    color: #2B2D42;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.subHeader {
+    color: rgba(42, 44, 65, 0.8);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.img {
+    max-width: 100% !important;
+    height: auto !important;
+    vertical-align: middle !important;
+    font-style: italic !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    shape-margin: 0.75rem !important;
+}
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+
+    background: #2B2D42;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.custom-card {
+    border-radius: 10px;
+    box-shadow: none;
+    // background-color: #e6e6e6;
+}
+
+
+// tui-root > tui-scroll-controls {
+//     background-color: #e6e6e6;
+// }
