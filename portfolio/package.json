@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@ionic/angular": "^8.3.0",
+    "better-file-downloader": "^1.0.9",
     "lottie-web": "^5.12.2",
     "ngx-lottie": "^12.0.0",
     "rxjs": "~7.8.0",
@@ -31,6 +32,7 @@
     "@angular-devkit/build-angular": "^18.2.0",
     "@angular/cli": "^18.2.0",
     "@angular/compiler-cli": "^18.2.0",
+    "@ionic/angular-toolkit": "latest",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
@@ -38,7 +40,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.5.2",
-    "@ionic/angular-toolkit": "latest"
+    "typescript": "~5.5.2"
   }
 }
