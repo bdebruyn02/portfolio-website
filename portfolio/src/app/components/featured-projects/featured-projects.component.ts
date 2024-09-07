@@ -14,7 +14,7 @@ import { CarouselModule, CarouselResponsiveOptions } from 'primeng/carousel';
   imports: [CommonModule, IonCard, IonCardContent, MatCardModule, MatIconModule, CarouselModule]
 })
 export class FeaturedProjectsComponent implements OnInit{
-  @Input({required: true}) featuredProjects!: projectT[];
+  featuredProjects = input<projectT[]>([]);
 
   responsiveOptions: CarouselResponsiveOptions[] = [
     {

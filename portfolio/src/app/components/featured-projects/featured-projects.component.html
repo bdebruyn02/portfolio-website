@@ -6,7 +6,7 @@
       </div>
 
       <div class="cards">
-        <p-carousel [value]="featuredProjects" [numVisible]="4" [numScroll]="1" [showNavigators]="true"
+        <p-carousel [value]="featuredProjects()" [numVisible]="4" [numScroll]="1" [showNavigators]="true"
           [responsiveOptions]="responsiveOptions" >
           <ng-template let-project pTemplate="item">
             <mat-card appearance="outlined" >
