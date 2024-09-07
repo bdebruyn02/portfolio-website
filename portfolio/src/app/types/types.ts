@@ -8,7 +8,7 @@ export type experience = {
   companyName: string;
   employmentType: string;
   location: string;
-  LocationType: string;
+  locationType: string;
   currentWorking: boolean;
   startDate: Date;
   endDate: Date;
@@ -26,7 +26,8 @@ export type portfolioData = {
   links?: linksT[];
   about_me?: string;
   experience?: experience[];
-  projects?: projectT[];
+  featuredProjects?: projectT[];
+  allProjects?: projectT[];
 };
 
 export type fileOptionsT = {

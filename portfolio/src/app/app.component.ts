@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   private dataService = inject(DataService);
   private destroyRef = inject(DestroyRef);
 
-  portfolioData!: portfolioData;
+  portfolioData?: portfolioData;
 
   ngOnInit(): void {
     this.fetchData();
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   private fetchData() {
     this.dataService.loadData().pipe(takeUntilDestroyed(this.destroyRef)).subscribe((data: portfolioData) => {
       this.portfolioData = data;
-      this.dataService.portfolioData.set(data);
+      this.dataService.portfolioData.update(x => x = data);
     });
   }
 }

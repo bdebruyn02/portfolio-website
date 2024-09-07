@@ -6,68 +6,62 @@
 
     .content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: inherit;
-        justify-content: space-around;
-        align-items: center;
     }
-    
-    // .chart {
-    //     display: inherit;
-    //     justify-content: center;
-    //     width: 60%;
 
-    //     .highchart {
-    //         padding: 0 1rem;
-    //         width: 100%;
-    //     }
-    // }
-    
-    .se {
-        display: inherit;
-        flex-wrap: wrap;
-        justify-content: space-between; /* Adjust as needed */
-        width: 40%;
+    .experience-item {
+        margin-bottom: 20px;
     }
     
-    /* Assuming the elements inside .se are divs or similar */
-    .se > * {
-        width: calc(50% - 10px); /* Adjust width as needed */
-        margin-bottom: 20px; /* Adjust margin as needed */
+    .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
     
-    .header-text {
-        font-size: large;
+    .job-title {
+        color: rgba(42, 44, 65, 0.8);
+        font-size: 1.125rem;
         font-weight: 500;
-        margin-top: .5rem;
     }
     
-    /* Media Query for switching to column layout */
-    @media screen and (max-width: 768px) {
-        .content {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .se {
-            width: 100%; /* Full width */
-        }
-
-        .se > * {
-            width: 100%; /* Adjust width as needed */
-            margin-bottom: 20px; /* Adjust margin as needed */
-        }
-
-
-        .chart {
-            width: 100%;
-            .highchart {
-                width: 100%;
-            }
-        }
-    
-    
-        /* Adjust other styles as needed */
+    .company-name {
+        font-size: 1rem;
+        color: rgba(42, 44, 65, 0.8);
+        font-weight: 500;
     }
     
+    .experience-details {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        flex-direction: column;
+    }
+    
+    .job-description {
+        font-size: 14px;
+        margin-top: 10px;
+        color: rgba(42, 44, 65, 0.8);
+        line-height: 1.5;
+    }
+    
+    .experience-details span {
+        margin-right: 10px;
+    }
+    
+    .experience-header h3 {
+        margin: 0;
+    }
+    
+    .company-name,
+    .employment-date,
+    .location {
+        color: #555;
+    }
+
+    mat-divider {
+        margin-bottom: 14px;
+    }
+
 }

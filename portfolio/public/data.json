@@ -10,10 +10,10 @@
       "companyName": "CBOS",
       "employmentType": "Full-time",
       "location": "City of Cape Town, Western Cape, South Africa",
-      "LocationType": "Remote",
-      "currentWorking": "true",
-      "startDate": "01/05/2024",
-      "endData": "",
+      "locationType": "Remote",
+      "currentWorking": true,
+      "startDate": "06/01/2024",
+      "endDate": "",
       "description": "<p>At CBOS, I develop and maintain web applications using the .NET Framework, Angular, and ASP.NET MVC. My key contributions include:</p><p>• Building dynamic web applications with ASP.NET MVC and C#.<br>• Creating responsive front-end interfaces using Angular.<br>• Managing databases with Microsoft SQL Server and optimizing data access through Entity Framework.<br>• Collaborating in Agile teams to deliver high-quality software solutions.</p>"
     },
     {
@@ -21,10 +21,10 @@
       "companyName": "Microzone Solutions",
       "employmentType": "Full-time",
       "location": "Bloemfontein, Free State, South Africa",
-      "LocationType": "Remote",
-      "currentWorking": "false",
-      "startDate": "01/03/2022",
-      "endData": "31/04/2024",
+      "locationType": "Remote",
+      "currentWorking": false,
+      "startDate": "03/01/2022",
+      "endDate": "05/31/2024",
       "description": "<p>At Microzone, I maintained and developed software solutions by creating Micro-Front Ends in Angular and Micro API Services in ASP.NET C#. Key highlights include:</p><p>• Developed and optimized database changes using Microsoft SQL.<br>• Collaborated with senior developers on project management and strategic initiatives.<br>• Delivered projects in TypeScript, SQL, and C# as part of a small team, consistently exceeding deadlines through teamwork.</p>"
     },
     {
@@ -32,10 +32,10 @@
       "companyName": "Microzone Solutions",
       "employmentType": "Full-time",
       "location": "Bloemfontein, Free State, South Africa",
-      "LocationType": "Remote",
-      "currentWorking": "false",
-      "startDate": "01/02/2022",
-      "endData": "28/02/2022",
+      "locationType": "Remote",
+      "currentWorking": false,
+      "startDate": "02/01/2022",
+      "endDate": "02/28/2022",
       "description": "<p>During my internship at Microzone, I enhanced my Full Stack Development skills, working with TypeScript, Angular, SCSS, and ASP.NET Web API. Key achievements include:</p><p>• Gained practical experience in SQL and full-stack technologies.<br>• Adapted to a dynamic work environment while staying updated on evolving industry standards.<br>• Worked under mentorship to implement code changes aligned with project design specifications.</p>"
     },
     {
@@ -43,14 +43,14 @@
       "companyName": "OriginX RP",
       "employmentType": "Freelance",
       "location": "Bloemfontein, Free State, South Africa",
-      "LocationType": "Remote",
-      "currentWorking": "false",
-      "startDate": "01/06/2020",
-      "endData": "31/04/2021",
+      "locationType": "Remote",
+      "currentWorking": false,
+      "startDate": "06/01/2020",
+      "endDate": "04/31/2021",
       "description": "<p>In the Origin X Project, I contributed effectively both independently and as part of a team.&nbsp;<br>Key accomplishments include:</p><p>• Set up and configured a TeamSpeak server on Debian Linux via SSH.<br>• Configured a Rack Server to ensure global connectivity for end-users.<br>• Independently optimized the server to handle high workflow demands smoothly.</p>"
     }
   ],
-  "projects": [
+  "featuredProjects": [
     {
       "name": "FiveM Launcher",
       "photoName": "TDLauncher.png",

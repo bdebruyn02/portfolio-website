@@ -6,21 +6,24 @@
       </div>
 
       <div class="content">
-        <div class="se">
-          @for (item of experience(); track $index) {
-            <mat-card appearance="outlined">
-              <mat-card-content>
-                <div class="header-text" [innerHTML]="item.title"></div>
-                <!-- <div class="header-text" [innerHTML]="item.category"></div>
-                <ul style="margin: .25rem 0 !important;">
-                  @for (tech of item.technologies; track tech) {
-                    <li>{{tech}}</li>
-                  }
-              </ul> -->
-              </mat-card-content>
-            </mat-card>
+        @for (item of experience(); track $index) {
+          <div class="experience-item">
+            <div class="experience-header">
+              <div class="job-title">{{item.title}}</div>
+            </div>
+            <div class="experience-details">
+              <span class="company-name">{{item.companyName}} - {{item.employmentType}}</span>
+              <span class="employment-date">{{item.startDate | date: 'MMM/yyyy'}} - {{item.currentWorking? 'Present' : item.endDate | date: 'MMM/yyyy'}} • {{monthsYearsDifference(item.startDate, item.endDate)}}</span>
+              <span class="location">{{item.location}} - {{item.locationType}}</span>
+            </div>
+            <div class="job-description" [innerHTML]="item.description">
+            </div>
+          </div>
+
+          @if(!$last) {
+            <mat-divider></mat-divider>
           }
-        </div>
+        }
       </div>
     </div>
 
