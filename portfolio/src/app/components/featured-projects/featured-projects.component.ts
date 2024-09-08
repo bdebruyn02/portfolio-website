@@ -1,6 +1,6 @@
 import { Component, Input, input, OnInit } from '@angular/core';
 import { IonCard, IonCardContent } from "@ionic/angular/standalone";
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { projectT } from '../../types/types';
@@ -11,7 +11,7 @@ import { CarouselModule, CarouselResponsiveOptions } from 'primeng/carousel';
   templateUrl: './featured-projects.component.html',
   styleUrls: ['./featured-projects.component.scss'],
   standalone: true,
-  imports: [CommonModule, IonCard, IonCardContent, MatCardModule, MatIconModule, CarouselModule]
+  imports: [CommonModule, IonCard, IonCardContent, MatCardModule, MatIconModule, CarouselModule, NgOptimizedImage]
 })
 export class FeaturedProjectsComponent implements OnInit{
   featuredProjects = input<projectT[]>([]);

@@ -10,7 +10,7 @@
           [responsiveOptions]="responsiveOptions" >
           <ng-template let-project pTemplate="item">
             <mat-card appearance="outlined" >
-              <img mat-card-image class="img" [alt]="project.name" [src]="'/' + project.photoName" width="300" height="168" loading="lazy" >
+              <img mat-card-image class="img" [alt]="project.name" [ngSrc]="'/' + project.photoName" width="300" height="168">
               <mat-card-content>
                 <div class="card-header">
                  <div class="header-text" [innerHTML]="project.name"></div>
