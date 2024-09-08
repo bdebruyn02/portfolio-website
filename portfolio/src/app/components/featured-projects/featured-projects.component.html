@@ -2,28 +2,34 @@
   <ion-card-content>
     <div class="cards-container">
       <div class="header">
-        Featured Projects: 
+        Featured Projects:
       </div>
 
       <div class="cards">
         <p-carousel [value]="featuredProjects()" [numVisible]="4" [numScroll]="1" [showNavigators]="true"
-          [responsiveOptions]="responsiveOptions" >
+          [responsiveOptions]="responsiveOptions">
           <ng-template let-project pTemplate="item">
-            <mat-card appearance="outlined" >
-              <img mat-card-image class="img" [alt]="project.name" [ngSrc]="'/' + project.photoName" width="300" height="168">
-              <mat-card-content>
-                <div class="card-header">
-                 <div class="header-text" [innerHTML]="project.name"></div>
-                 @if (project.href) {
-                   <div class="icon" [title]="project.href">
-                     <mat-icon aria-hidden="false" aria-label="project.href" fontIcon="link" (click)="goToLink(project.href)"></mat-icon>
-                   </div>
-                 }
-                </div>
-                <div class="card-content" [innerHTML]="project.shortDesc"></div>
-              </mat-card-content>
-            </mat-card>
+
+            <!-- component -->
+            <div class="max-w-7xl mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4">
+              <mat-card appearance="outlined" class="w-full h-auto shadow-lg xl:h-[490px] xl:w-[450px] md:h-[490px] md:w-[450px] sm:w-[200] sm:h-auto" >
+                <img mat-card-image class="w-full object-cover h-[220px]" [alt]="project.name" [src]="'/' + project.photoName">
+                <mat-card-content>
+                  <div class="card-header flex justify-between items-center">
+                    <div class="header-text text-lg font-semibold text-gray-700" [innerHTML]="project.name"></div>
+                    @if(project.href) {
+                      <div class="icon" [title]="project.href">
+                        <mat-icon aria-hidden="false" aria-label="project.href" fontIcon="link" class="cursor-pointer text-gray-600 hover:text-gray-400" (click)="goToLink(project.href)"></mat-icon>
+                      </div>
+                    }
+                  </div>
+                  <div class="card-content text-gray-600 text-sm" [innerHTML]="project.shortDesc"></div>
+                </mat-card-content>
+              </mat-card>
+            </div>
             
+            
+
           </ng-template>
         </p-carousel>
       </div>

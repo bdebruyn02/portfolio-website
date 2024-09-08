@@ -18,22 +18,17 @@ export class FeaturedProjectsComponent implements OnInit{
 
   responsiveOptions: CarouselResponsiveOptions[] = [
     {
-        breakpoint: '1920px',
-        numVisible: 4,
-        numScroll: 1
-    },
-    {
-        breakpoint: '1536px',
+        breakpoint: '2080px',
         numVisible: 3,
         numScroll: 1
     },
     {
-      breakpoint: '1440px',
+      breakpoint: '1665px',
       numVisible: 2,
       numScroll: 1
     },
     {
-      breakpoint: '768px',
+      breakpoint: '1200px',
       numVisible: 1,
       numScroll: 1
   }
