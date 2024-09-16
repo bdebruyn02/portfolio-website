@@ -14,24 +14,30 @@ import {MatDividerModule} from '@angular/material/divider';
 export class ExperienceComponent {
   experience = input<experience[]>();
 
-  monthsYearsDifference(date1: string | Date, date2: string | Date): string {
+  monthsYearsDifference(_startDate: string | Date, _endDate: string | Date): string {
     // Convert date strings to Date objects
-    let d1 = new Date(date1);
-    let d2 = (date2 !== '')? new Date(date2) : new Date();
+    let startDate = new Date(_startDate);
+    let endDate = (_endDate !== '')? new Date(_endDate) : new Date();
 
-    // Ensure d1 is earlier than d2
-    if (d1 > d2) {
-      [d1, d2] = [d2, d1];
+    // Ensure startDate is earlier than endDate
+    if (startDate > endDate) {
+      [startDate, endDate] = [endDate, startDate];
     }
 
     // Calculate the difference in years and months
-    let yearsDiff = d2.getFullYear() - d1.getFullYear();
-    let monthsDiff = d2.getMonth() - d1.getMonth();
+    let yearsDiff = endDate.getFullYear() - startDate.getFullYear();
+    let monthsDiff = endDate.getMonth() - startDate.getMonth();
+  
 
     // Adjust yearsDiff and monthsDiff if necessary
     if (monthsDiff < 0) {
       yearsDiff -= 1;
       monthsDiff += 12;
+    }
+
+    if((startDate.getMonth() === endDate.getMonth()) 
+      && startDate.getFullYear() === endDate.getFullYear()) {
+      monthsDiff = 1;
     }
 
     // Format the output
