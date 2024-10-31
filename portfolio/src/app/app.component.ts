@@ -1,11 +1,10 @@
 import { AfterViewInit, Component, DestroyRef, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AnimationComponent } from './components/animation/animation.component';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { DataService } from './services/data.service';
 import { portfolioData } from './types/types';
 import { ProfileComponent } from './components/profile/profile.component';
-import { retry } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -15,9 +14,7 @@ import { retry } from 'rxjs';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements AfterViewInit {
-
   private dataService = inject(DataService);
-  private destroyRef = inject(DestroyRef);
 
   portfolioData?: portfolioData;
 

@@ -14,7 +14,11 @@ module.exports = {
         '2xl': '6rem',
       },
     },
-    extend: {},
+    extend: {
+      lineClamp: {
+        7: '7',
+      },
+    },
   },
   plugins: [require('tailwindcss-primeui')]
 }

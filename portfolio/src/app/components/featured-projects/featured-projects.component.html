@@ -6,7 +6,29 @@
       </div>
 
       <div class="cards md:mt-2">
-        <p-carousel [value]="featuredProjects()" [numVisible]="4" [numScroll]="1" [showNavigators]="true"
+        @if(device() === 'Mobile') {
+          @for (project of featuredProjects(); track project) {
+            <div class="max-w-7xl mx-auto px-4 my-2">
+              <div class="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden w-full h-auto md:h-64">
+                <img [alt]="project.name" [src]="'/' + project.photoName" class="w-full md:w-1/2 h-48 md:h-auto object-cover">
+                <div class="p-6 flex flex-col justify-between w-full md:w-1/2">
+                  <div class="flex justify-between items-center">
+                    <div class="text-lg font-semibold text-gray-700">{{project.name}}</div>
+                    @if(project.href) {
+                      <div class="icon" [title]="project.href">
+                        <mat-icon aria-hidden="false" aria-label="project.href" fontIcon="link" class="cursor-pointer text-gray-600 hover:text-gray-400" (click)="goToLink(project.href)"></mat-icon>
+                      </div>
+                    }
+                  </div>
+                  <p class="text-gray-600 text-sm line-clamp-7 text-justify" [matTooltip]="project.shortDesc">
+                    {{project.shortDesc}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          }
+        } @else {
+          <p-carousel [value]="featuredProjects()" [numVisible]="4" [numScroll]="1" [showNavigators]="true"
           [responsiveOptions]="responsiveOptions">
           <ng-template let-project pTemplate="item">
 
@@ -23,7 +45,7 @@
                       </div>
                     }
                   </div>
-                  <p class="text-gray-600 text-sm lg:line-clamp-6 md: max-h-32 overflow-y-scroll" [matTooltip]="project.shortDesc">
+                  <p class="text-gray-600 text-sm lg:line-clamp-6 md: max-h-32 overflow-y-scroll text-justify" [matTooltip]="project.shortDesc">
                     {{project.shortDesc}}
                   </p>
                 </div>
@@ -31,6 +53,7 @@
             </div>
           </ng-template>
         </p-carousel>
+        }
       </div>
     </div>
 
