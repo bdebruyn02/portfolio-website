@@ -14,7 +14,7 @@
                     <a [innerHTML]="'Resume' | titlecase" (click)="downloadResume()"></a>
                 </div>
 
-                <div class="time-zone">
+                <div class="time-zone hidden lg:block">
                     <span class="location" [innerHTML]="location() | titlecase"></span>
                     <span [innerHTML]="time | uppercase"></span>
                 </div>

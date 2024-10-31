@@ -5,13 +5,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { projectT } from '../../types/types';
 import { CarouselModule, CarouselResponsiveOptions } from 'primeng/carousel';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
 @Component({
   selector: 'featured-projects',
   templateUrl: './featured-projects.component.html',
   styleUrls: ['./featured-projects.component.scss'],
   standalone: true,
-  imports: [CommonModule, IonCard, IonCardContent, MatCardModule, MatIconModule, CarouselModule, NgOptimizedImage]
+  imports: [CommonModule, IonCard, IonCardContent, MatCardModule, MatIconModule, CarouselModule, NgOptimizedImage, MatTooltipModule]
 })
 export class FeaturedProjectsComponent implements OnInit{
   featuredProjects = input<projectT[]>([]);
