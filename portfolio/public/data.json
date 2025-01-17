@@ -85,6 +85,13 @@
       "shortDesc": "Using Angular v17 and .NET 8 Web API with entity framework, I developed this project for managing e-sports teams, with additional functionality of match scheduling, score tracking and win rate ratio's for the team managers. The project goal was to learn standalone angular applications and how to integrate and use entity framework with .net web api. The project was fun, implementing entity framework into .net was something new to me, and i enjoyed learning it.",
       "href": "https://github.com/bdebruyn02/esports-scoring-app",
       "feature": true
+    },
+    {
+      "name": "Coronia Hotel Website",
+      "photoName": "coronia-hotel.png",
+      "shortDesc": "Redesigned and rebuilt the Coronia Hotel website, based in Lagos, Nigeria, using Angular and TailwindCSS. Integrated Mailgun and Firebase Functions, with a dynamic setup enabling seamless future dashboard integration.",
+      "href": "https://coroniahotel.com/",
+      "feature": false
     }
   ]
 }
