@@ -91,7 +91,7 @@
       "photoName": "coronia-hotel.png",
       "shortDesc": "Redesigned and rebuilt the Coronia Hotel website, based in Lagos, Nigeria, using Angular and TailwindCSS. Integrated Mailgun and Firebase Functions, with a dynamic setup enabling seamless future dashboard integration.",
       "href": "https://coroniahotel.com/",
-      "feature": false
+      "feature": true
     }
   ]
 }
