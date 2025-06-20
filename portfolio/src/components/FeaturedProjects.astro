@@ -1,19 +1,42 @@
 ---
 // Featured Projects section
+const imageBase = "https://bdebruyn02.github.io/cdn/images/";
 const projects = [
   {
-    name: "Project Alpha",
-    desc: "A web application for managing tasks and projects, built with React and Node.js.",
-    repo: "#",
-    demo: "#",
-    img: "/project-alpha.png"
+    name: "FiveM Launcher",
+    desc: "Built with Angular and Electron, the launcher lets you connect to any FiveM server without opening the FiveM program separately. I noticed people paying for a similar tool unnecessarily and created a free alternative. This project marked my first time combining Angular and Electron, with Electron enabling access to the native system shell for connecting to user-saved servers.",
+    img: imageBase + "TDLauncher.png",
+    url: "/projects/fivem-launcher"
   },
   {
-    name: "Project Beta",
-    desc: "An e-commerce platform with a focus on user experience, developed using Python and Django.",
-    repo: "#",
-    demo: "#",
-    img: "/project-beta.png"
+    name: "Online Chatting App",
+    desc: "Built with React and Firebase, this project lets you login through Google or Facebook, with Firebase handling real-time chatting and the authentication. I do not have much to say about the project; as it was more of a learning experience to explore React and Firebase.",
+    img: imageBase + "vic_chat.jpg",
+    url: "/projects/online-chatting-app"
+  },
+  {
+    name: "Bundle of FiveM Scripts",
+    desc: "Written in Lua, this project contains various scripts to meet the needs of a FiveM server. The goal was to develop game modifications for these servers. There isn't much more to say about it, but it significantly helped my understanding of lua scripting, and improve on my coding skills.",
+    img: imageBase + "fivem_lua_scripts.jpg",
+    url: "/projects/bundle-of-fivem-scripts"
+  },
+  {
+    name: "FiveM Server",
+    desc: "As the lead developer, I ran a successful FiveM Server in South Africa, drawing in a lively community of hundreds of players. The project taught me invaluable lessons in hosting and configuration servers. Along the way, I sharpened my skills in MySQL and Lua scripting, troubleshooting server performance issues, and debugging game code.",
+    img: imageBase + "originx.png",
+    url: "/projects/fivem-server"
+  },
+  {
+    name: "E-Sports Scoring",
+    desc: "Using Angular v17 and .NET 8 Web API with entity framework, I developed this project for managing e-sports teams, with additional functionality of match scheduling, score tracking and win rate ratio's for the team managers. The project goal was to learn standalone angular applications and how to integrate and use entity framework with .net web api. The project was fun, implementing entity framework into .net was something new to me, and I enjoyed learning it.",
+    img: imageBase + "scorecraft.png",
+    url: "/projects/esports-scoring"
+  },
+  {
+    name: "Coronia Hotel Website",
+    desc: "Redesigned and rebuilt the Coronia Hotel website, based in Lagos, Nigeria, using Angular and TailwindCSS. Integrated Mailgun and Firebase Functions, with a dynamic setup enabling seamless future dashboard integration.",
+    img: imageBase + "coronia-hotel.png",
+    url: "/projects/coronia-hotel-website"
   }
 ];
 ---
@@ -24,8 +47,8 @@ const projects = [
       <div class="flex flex-col md:flex-row md:items-center gap-4 bg-gray-800 rounded-lg p-4">
         <div class="flex-1">
           <div class="font-medium">{project.name}</div>
-          <div class="text-xs text-gray-400 mb-2">{project.desc} [<a href={project.repo} class="underline">Repository Link</a>] [<a href={project.demo} class="underline">Live Demo Link</a>]</div>
-          <button class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-xs">View Project</button>
+          <div class="text-xs text-gray-400 mb-2">{project.desc}</div>
+          <a href={project.url} class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-xs inline-block mt-2">View Project</a>
         </div>
         <img src={project.img} alt={project.name} class="w-48 h-28 object-cover rounded-md bg-gray-700" />
       </div>
