@@ -1,0 +1,14 @@
+---
+// Skills section
+const skills = [
+  "JavaScript", "React", "Node.js", "Python", "Django", "SQL", "Git", "REST APIs"
+];
+---
+<section class="py-6">
+  <h3 class="text-lg font-semibold mb-2">Skills</h3>
+  <div class="flex flex-wrap gap-2">
+    {skills.map(skill => (
+      <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-xs">{skill}</span>
+    ))}
+  </div>
+</section>

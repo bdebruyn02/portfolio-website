@@ -1,0 +1,27 @@
+---
+// Work History section
+const jobs = [
+  {
+    company: "Tech Innovators Inc.",
+    period: "2021 - Present",
+    title: "Software Engineer"
+  },
+  {
+    company: "Digital Solutions Co.",
+    period: "2019 - 2021",
+    title: "Junior Developer"
+  }
+];
+---
+<section class="py-6">
+  <h3 class="text-lg font-semibold mb-2">Work History</h3>
+  <ul>
+    {jobs.map(job => (
+      <li class="mb-2">
+        <div class="font-medium">{job.company}</div>
+        <div class="text-xs text-gray-400">{job.period}</div>
+        <div class="text-xs text-gray-300 mb-1">{job.title}</div>
+      </li>
+    ))}
+  </ul>
+</section>
