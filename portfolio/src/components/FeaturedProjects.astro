@@ -1,7 +1,14 @@
 ---
 // Featured Projects section
+interface Project {
+  name: string;
+  desc: string;
+  img: string;
+  url: string;
+}
+
 const imageBase = "https://bdebruyn02.github.io/cdn/images/";
-const projects = [
+const projects: Project[] = [
   // {
   //   name: "FiveM Launcher",
   //   desc: "Built with Angular and Electron, the launcher lets you connect to any FiveM server without opening the FiveM program separately. I noticed people paying for a similar tool unnecessarily and created a free alternative. This project marked my first time combining Angular and Electron, with Electron enabling access to the native system shell for connecting to user-saved servers.",
@@ -29,33 +36,33 @@ const projects = [
   {
     name: "Briefly-AI (Current Project)",
     desc: "AI-powered SaaS platform that summarizes articles, blogs, and documents with one click.",
-    img: imageBase + "coronia-hotel.png",
+    img: imageBase + "in_progress_placeholder.png",
     url: "https://fundman-a6785.web.app/",
   },
 
   {
     name: "FundMan - Fund Management System",
     desc: "FundMan is a modern, user-friendly web app for managing personal finances. Users can log expenses, apply savings rules, and visualize spending trends to set and achieve savings goals. Future updates will add reports, data import/export, and more.",
-    img: imageBase + "coronia-hotel.png",
+    img: imageBase + "fund_man.png",
     url: "https://fundman-a6785.web.app/",
   },
 
   {
     name: "Coronia Hotel Website",
-    desc: "Redesigned and rebuilt the Coronia Hotel website, based in Lagos, Nigeria, using Angular and TailwindCSS. Integrated Mailgun and Firebase Functions, with a dynamic setup enabling seamless future dashboard integration.",
+    desc: "Redesigned and rebuilt the Coronia Hotel website for a hotel in Lagos, Nigeria. The new site features a modern look, improved contact options, and is ready for future upgrades.",
     img: imageBase + "coronia-hotel.png",
     url: "https://coroniahotel.com/",
   },
   {
     name: "E-Sports Scoring",
-    desc: "Using Angular v17 and .NET 8 Web API with entity framework, I developed this project for managing e-sports teams, with additional functionality of match scheduling, score tracking and win rate ratio's for the team managers. The project goal was to learn standalone angular applications and how to integrate and use entity framework with .net web api. The project was fun, implementing entity framework into .net was something new to me, and i enjoyed learning it.",
+    desc: "A web app for managing e-sports teams, matches, and scores. Team managers can schedule matches, track results, and view win rates. Built to make organizing and tracking e-sports events simple and efficient.",
     img: imageBase + "scorecraft.png",
     url: "https://github.com/bdebruyn02/esports-scoring-app",
   },
 ];
 ---
 
-<section class="py-6">
+<section class="py-4">
   <h3 class="text-lg font-semibold mb-2">Featured Projects</h3>
   <div class="space-y-6">
     {
