@@ -1,27 +1,49 @@
 ---
 // Work History section
-const jobs = [
+interface Job {
+  company: string;
+  period: string;
+  title: string;
+  description?: string;
+}
+
+const jobs : Job[] = [
   {
-    company: "Tech Innovators Inc.",
-    period: "2021 - Present",
-    title: "Software Engineer"
+    company: "CBOS",
+    period: "2024 - Present",
+    title: "Intermediate Software Developer",
+    description:
+      "<p>At CBOS, I develop and maintain web applications using the .NET Framework, Angular, and ASP.NET MVC. My key contributions include:</p><p>• Building dynamic web applications with ASP.NET MVC and C#.<br>• Creating responsive front-end interfaces using Angular.<br>• Managing databases with Microsoft SQL Server and optimizing data access through Entity Framework.<br>• Collaborating in Agile teams to deliver high-quality software solutions.</p>",
   },
   {
-    company: "Digital Solutions Co.",
-    period: "2019 - 2021",
-    title: "Junior Developer"
-  }
+    company: "Microzone Solutions",
+    period: "2022 - 2024",
+    title: "Software Developer",
+    description: "<p>At Microzone, I maintained and developed software solutions by creating Micro-Front Ends in Angular and Micro API Services in ASP.NET C#. Key highlights include:</p><p>• Developed and optimized database changes using Microsoft SQL.<br>• Collaborated with senior developers on project management and strategic initiatives.<br>• Delivered projects in TypeScript, SQL, and C# as part of a small team, consistently exceeding deadlines through teamwork.</p>"
+  },
+  {
+    company: "Project (OriginX)",
+    period: "2022 - 2024",
+    title: "Lead Developer",
+    description: "<p>In the Origin X Project, I contributed effectively both independently and as part of a team.&nbsp;<br>Key accomplishments include:</p><p>• Set up and configured a TeamSpeak server on Debian Linux via SSH.<br>• Configured a Rack Server to ensure global connectivity for end-users.<br>• Independently optimized the server to handle high workflow demands smoothly.</p>"
+  },
 ];
 ---
+
 <section class="py-6">
   <h3 class="text-lg font-semibold mb-2">Work History</h3>
   <ul>
-    {jobs.map(job => (
-      <li class="mb-2">
-        <div class="font-medium">{job.company}</div>
-        <div class="text-xs text-gray-400">{job.period}</div>
-        <div class="text-xs text-gray-300 mb-1">{job.title}</div>
-      </li>
-    ))}
+    {
+      jobs.map((job) => (
+        <li class="mb-2">
+          <div class="font-medium">{job.company} </div>
+          <div class="text-xs text-gray-400">{job.period}</div>
+          <div class="text-xs text-gray-300 mb-1">{job.title}</div>
+          {job.description && (
+            <div class="text-xs text-gray-400 py-0.5" set:html={job.description}></div>
+          )}
+        </li>
+      ))
+    }
   </ul>
 </section>
