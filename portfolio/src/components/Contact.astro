@@ -2,16 +2,20 @@
 // Contact section
 import { Icon } from 'astro-icon/components';
 ---
-<section class="py-6">
-  <div class="text-center text-xs text-gray-400">
-    Connect with me on LinkedIn and Github
-    <div class="flex justify-center gap-6 mt-2">
-      <a href="https://www.linkedin.com/in/bdebruyn/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center">
+<section id="contact" class="scroll-mt-28">
+  <div class="glass-panel mx-auto max-w-3xl rounded-lg p-8 text-center md:p-12">
+    <p class="section-kicker justify-center">Contact</p>
+    <h2 class="mt-3 text-3xl font-medium text-white">Open to building useful things.</h2>
+    <p class="mx-auto mt-4 max-w-xl text-sm leading-7 text-[#c4c7c8] md:text-base">
+      Connect with me on LinkedIn and Github.
+    </p>
+    <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+      <a href="https://www.linkedin.com/in/bdebruyn/" target="_blank" rel="noopener noreferrer" class="btn-secondary gap-2">
         <Icon name="mdi:linkedin" class="w-5 h-5" />
         LinkedIn
       </a>
-      <a href="https://github.com/bdebruyn02" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center">
-       <Icon name="mdi:github" class="w-5 h-5" />
+      <a href="https://github.com/bdebruyn02" target="_blank" rel="noopener noreferrer" class="btn-secondary gap-2">
+        <Icon name="mdi:github" class="w-5 h-5" />
         Github
       </a>
     </div>

@@ -2,15 +2,36 @@
 // Profile component: name, title, location, about
 ---
 
-<section class="flex flex-col items-center text-center py-8">
-  <img src="https://bdebruyn02.github.io/cdn/images/profile_picture.jpeg" alt="Brandon Jason de Bruyn" class="w-24 h-24 rounded-full object-cover mb-4" loading="lazy" />
-  <h2 class="text-2xl font-semibold">Brandon Jason de Bruyn</h2>
-  <p class="text-gray-400">Intermediate Software Developer</p>
-  <p class="text-gray-400 mb-4">Based in South Africa, WC</p>
-  <p class="max-w-xl text-gray-300 text-sm text-justify">
-    Hi, I'm Brandon. I'm a software developer who loves creating things that
-    make a difference. I enjoy learning new skills, taking on challenges, and
-    always aim to do my best in every project. I'm dedicated to growing as a
-    developer and helping others through my work.
-  </p>
+<section id="profile" class="flex min-h-[680px] scroll-mt-28 items-center">
+  <div class="max-w-4xl">
+    <div class="chip mb-8 inline-flex items-center gap-2 rounded-full px-3 py-1 font-geist text-sm text-[#c4c7c8]">
+      <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+      Based in South Africa, WC
+    </div>
+    <h1 class="max-w-3xl text-5xl font-semibold leading-tight text-white md:text-7xl">
+      Brandon Jason de Bruyn
+    </h1>
+    <p class="mt-5 max-w-3xl border-l-2 border-white/10 pl-5 text-lg leading-8 text-[#c4c7c8]">
+      Full-Stack Engineer | ASP.NET Core, Angular, React, PostgreSQL | Building SaaS & Desktop Applications
+    </p>
+    <div class="mt-7 max-w-3xl space-y-4 text-base leading-7 text-[#c4c7c8]">
+      <p>
+        I'm a full-stack software engineer focused on building scalable web and desktop applications using
+        ASP.NET Core, Angular, React, PostgreSQL, and SQL Server.
+      </p>
+      <p>
+        My experience includes developing business-critical software, building cross-platform desktop
+        applications, and contributing across the full development lifecycle from architecture and backend APIs
+        to frontend experiences and deployment workflows.
+      </p>
+      <p>
+        I'm particularly interested in modern SaaS platforms, desktop applications, cloud-native systems, and
+        remote-first engineering environments where ownership and product thinking are valued.
+      </p>
+    </div>
+    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
+  </div>
 </section>

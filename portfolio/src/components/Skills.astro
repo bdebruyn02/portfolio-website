@@ -1,14 +1,29 @@
 ---
 // Skills section
 const skills = [
-  "Angular", ".Net Framework", "MS SQL", "Entity Framework", "TypeScript", "Git", "REST APIs", "React", "Python"
+  "ASP.NET Core",
+  "Angular",
+  "React",
+  "PostgreSQL",
+  "SQL Server",
+  "TypeScript",
+  "Entity Framework",
+  "Tauri",
+  "Git",
+  "CI/CD",
 ];
 ---
-<section class="py-4">
-  <h3 class="text-lg font-semibold mb-2">Skills</h3>
-  <div class="flex flex-wrap gap-2">
+<section id="skills" class="scroll-mt-28">
+  <div class="mb-8">
+    <p class="section-kicker">Tech Stack</p>
+    <h2 class="section-title">Tools I use to ship production work.</h2>
+  </div>
+  <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
     {skills.map(skill => (
-      <span class="bg-gray-700 text-gray-200 px-3 py-1 rounded-full text-xs">{skill}</span>
+      <div class="tech-card flex min-h-36 flex-col items-center justify-center gap-3 rounded p-6 text-center">
+        <span class="font-geist text-lg font-bold text-white">{skill}</span>
+        <span class="font-geist text-[10px] uppercase text-[#8e9192]">Core skill</span>
+      </div>
     ))}
   </div>
 </section>

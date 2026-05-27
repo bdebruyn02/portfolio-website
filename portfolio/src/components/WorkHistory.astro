@@ -13,7 +13,7 @@ const jobs : Job[] = [
     period: "2024 - Present",
     title: "Intermediate Software Developer",
     description:
-      "<p>At CBOS, I develop and maintain web applications using the .NET Framework, Angular, and ASP.NET MVC. My key contributions include:</p><p>• Building dynamic web applications with ASP.NET MVC and C#.<br>• Creating responsive front-end interfaces using Angular.<br>• Managing databases with Microsoft SQL Server and optimizing data access through Entity Framework.<br>• Collaborating in Agile teams to deliver high-quality software solutions.</p>",
+      "<p>At CBOS, I develop and maintain web applications that support both internal operations and IoT solutions. My role involves full-stack development, working across front-end, back-end, and databases to deliver practical, reliable software.</p><p>Key Responsibilities:<br>• Develop and maintain full-stack web applications using ASP.NET Core, Angular, SQL Server, and PostgreSQL<br>• Design and implement backend APIs, business logic, and frontend features for internal and customer-facing systems<br>• Collaborate with cross-functional teams in agile development environments<br>• Contribute to performance optimization, debugging, testing, and deployment workflows<br>• Participate in architectural discussions and technical problem solving across multiple projects<br>• Work with modern development practices including Git workflows, CI/CD processes, and production support</p>",
   },
   {
     company: "Microzone Solutions",
@@ -30,20 +30,26 @@ const jobs : Job[] = [
 ];
 ---
 
-<section class="py-4">
-  <h3 class="text-lg font-semibold mb-2">Work History</h3>
-  <ul>
+<section id="history" class="scroll-mt-28">
+  <div class="mb-8">
+    <p class="section-kicker">Experience</p>
+    <h2 class="section-title">A practical path through product and platform work.</h2>
+  </div>
+  <div class="ml-3 flex flex-col gap-12 border-l border-white/10 py-2 pl-8">
     {
       jobs.map((job) => (
-        <li class="mb-2">
-          <div class="font-medium">{job.company} </div>
-          <div class="text-xs text-gray-400">{job.period}</div>
-          <div class="text-xs text-gray-300 mb-1">{job.title}</div>
+        <article class="relative">
+          <div class="absolute -left-[37px] top-2 h-3 w-3 rounded-full border-2 border-[#0a0a0a] bg-indigo-400 ring-1 ring-indigo-400/60"></div>
+          <div class="mb-2 flex flex-col justify-between gap-2 md:flex-row md:items-baseline">
+            <h3 class="text-xl font-medium text-white">{job.title}</h3>
+            <span class="font-geist text-xs text-[#8e9192]">{job.period}</span>
+          </div>
+          <div class="mb-4 font-geist text-xs font-semibold uppercase text-indigo-300">{job.company}</div>
           {job.description && (
-            <div class="text-xs text-gray-400 py-0.5" set:html={job.description}></div>
+            <div class="timeline-copy max-w-4xl text-sm leading-7 text-[#c4c7c8]" set:html={job.description}></div>
           )}
-        </li>
+        </article>
       ))
     }
-  </ul>
+  </div>
 </section>
